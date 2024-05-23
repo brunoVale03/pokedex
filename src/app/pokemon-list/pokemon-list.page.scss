@@ -1,0 +1,31 @@
+.pokemon-card {
+  width: 150px; /* Largura fixa do card */
+  transition: transform 0.2s ease; /* Transição suave para o zoom */
+}
+
+.pokemon-card:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do card ao passar o mouse sobre ele */
+}
+
+.pokemon-info {
+  display: flex; /* Utiliza flexbox para alinhar a imagem e as descrições */
+  align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.pokemon-image {
+  width: 50px; /* Largura da imagem */
+  height: 50px; /* Altura da imagem */
+  margin-right: 10px; /* Espaçamento à direita da imagem */
+}
+
+.extra-info {
+  display: none; /* Inicialmente, as informações extras não são exibidas */
+}
+
+.pokemon-card:hover .extra-info {
+  display: block; /* Exibe as informações extras ao passar o mouse sobre o card */
+}
+
+ion-card-title {
+  font-size: 16px; /* Tamanho da fonte do título do card */
+}

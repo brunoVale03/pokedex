@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pokémon List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="auto" *ngFor="let pokemon of pokemonList.results">
+        <ion-card class="pokemon-card"
+          (mouseenter)="expandCard($event)"
+          (mouseleave)="shrinkCard()"
+          (click)="goToDetails(pokemon.name)">
+          <ion-card-content>
+            <div class="pokemon-info">
+              <img [src]="getPokemonImage(pokemon.url)" alt="{{ pokemon.name }}" class="pokemon-image">
+              <div class="extra-info" *ngIf="hoveredPokemon === pokemon.name">
+                <p><strong>Height:</strong> {{ pokemon.height }}</p>
+                <p><strong>Weight:</strong> {{ pokemon.weight }}</p>
+                <p><strong>Base Experience:</strong> {{ pokemon.base_experience }}</p>
+              </div>
+            </div>
+            <ion-card-title>{{ pokemon.name | titlecase }}</ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

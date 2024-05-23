@@ -1,0 +1,28 @@
+ion-card {
+    margin: 10px;
+  }
+  
+  ion-card img {
+    width: 150px; /* Tamanho fixo para a imagem */
+    height: 150px; /* Tamanho fixo para a imagem */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do card */
+    display: block; /* Garante que a imagem seja um bloco */
+  }
+  
+  ion-card-content {
+    text-align: center; /* Centraliza o texto dentro do conteúdo do card */
+  }
+  
+  ion-card-header {
+    text-align: center; /* Centraliza o cabeçalho dentro do card */
+  }  
+  
+  ion-card-title {
+    font-size: 24px;
+  }
+  
+  ion-card-subtitle {
+    font-size: 18px;
+  }
+  

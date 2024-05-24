@@ -27,98 +27,46 @@ Certifique-se de ter os seguintes componentes instalados no seu sistema:
 ### Instalação
 
 1. Clone o repositório:
-
+```
 git clone https://github.com/seu-usuario/pokedex-ionic.git
 cd pokedex-ionic
-
+```
 2. Instale as dependências:
-
+```
 npm install
-
+```
 3. Execute a aplicação:
-
+```
 ionic serve
-
+```
 ## Estrutura do Projeto
+```
+  src/
+    app/
+      components/
+      pages/
+        pokemon-list/
+        pokemon-detail/
+      services/
+      app.component.html
+      app.component.scss
+      app.module.ts
+    assets/
+      icon/
+        original-icon.png
+    global.scss
+    index.html
+```
 
-src/
-  app/
-    components/
-    pages/
-      pokemon-list/
-      pokemon-detail/
-    services/
-    app.component.html
-    app.component.scss
-    app.module.ts
-  assets/
-    icon/
-      original-icon.png
-  global.scss
-  index.html
-
-## Adicionando o Rodapé Fixo
-### Código HTML
-Adicionei um rodapé fixo ao arquivo app.component.html para que ele apareça em todas as páginas da aplicação.
-
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-  <footer>
-    <div class="footer-content">
-      <img src="assets/icon/original-icon.png" alt="Original Symbol" class="footer-icon">
-      <p>Desenvolvido por Bruno Cezario do Vale</p>
-    </div>
-  </footer>
-</ion-app>
-
-## Estilos CSS
-### Os estilos para o rodapé foram adicionados ao arquivo global.scss para garantir que o rodapé tenha um design consistente em toda a aplicação.
-
-footer {
-  background-color: #f8f8f8;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-}
-
-## Adicionando o Ícone de "Original"
-Certifique-se de que o ícone de "original" está salvo na pasta assets/icon do projeto.
-
-src/
-  assets/
-    icon/
-      original-icon.png
-      
 ## Boas Práticas de Codificação
-### Estrutura Modular: A aplicação é organizada em módulos, componentes e serviços para facilitar a manutenção e a escalabilidade.
-### Código Limpo: Esforço constante para manter o código limpo, legível e bem documentado.
-### Responsividade: Garantia de que a aplicação é totalmente responsiva e funciona bem em dispositivos móveis e desktops.
-### Componentes Reutilizáveis: Criação de componentes reutilizáveis para evitar duplicação de código e facilitar futuras expansões.
-### Interatividade: Melhorar a experiência do usuário com interações suaves, como efeitos de hover e transições.
+  - Estrutura Modular: A aplicação é organizada em módulos, componentes e serviços para facilitar a manutenção e a escalabilidade.
+  - Código Limpo: Esforço constante para manter o código limpo, legível e bem documentado.
+  - Responsividade: Garantia de que a aplicação é totalmente responsiva e funciona bem em dispositivos móveis e desktops.
+  - Componentes Reutilizáveis: Criação de componentes reutilizáveis para evitar duplicação de código e facilitar futuras expansões.
+  - Interatividade: Melhorar a experiência do usuário com interações suaves, como efeitos de hover e transições.
 
 ## Conclusão
-Este projeto demonstra uma aplicação completa de Pokedex construída com Ionic e Angular. Ele inclui funcionalidades principais de listagem e detalhamento de Pokémons, pesquisa, e um rodapé fixo com informações de crédito. Seguindo as melhores práticas de desenvolvimento, o projeto é organizado, responsivo e fácil de manter.
+  Este projeto demonstra uma aplicação completa de Pokedex construída com Ionic e Angular. Ele inclui funcionalidades principais de listagem e detalhamento de Pokémons, pesquisa, e um rodapé fixo com informações de crédito. Seguindo as melhores práticas de desenvolvimento, o projeto é organizado, responsivo e fácil de manter.
 
 ## Autor
-Desenvolvido por Bruno Cezario do Vale
+  Desenvolvido por Bruno Cezario do Vale

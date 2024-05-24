@@ -28,8 +28,8 @@ Certifique-se de ter os seguintes componentes instalados no seu sistema:
 
 1. Clone o repositório:
 ```
-git clone https://github.com/seu-usuario/pokedex-ionic.git
-cd pokedex-ionic
+git clone https://github.com/brunoVale03/pokedex.git
+cd pokedex
 ```
 2. Instale as dependências:
 ```

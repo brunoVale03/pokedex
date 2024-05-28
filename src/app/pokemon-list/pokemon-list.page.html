@@ -9,12 +9,16 @@
     <ion-row>
       <ion-col size="auto" *ngFor="let pokemon of pokemonList.results">
         <ion-card class="pokemon-card"
-          (mouseenter)="expandCard($event)"
-          (mouseleave)="shrinkCard()"
-          (click)="goToDetails(pokemon.name)">
-          <ion-card-content>
+          (mouseenter)="expandCard(pokemon.name)"
+          (mouseleave)="shrinkCard()">
+          <ion-card-content (click)="goToDetails(pokemon.name)">
             <div class="pokemon-info">
               <img [src]="getPokemonImage(pokemon.url)" alt="{{ pokemon.name }}" class="pokemon-image">
+              <ion-icon 
+                [name]="isFavorite(pokemon) ? 'star' : 'star-outline'" 
+                class="favorite-icon" 
+                (click)="toggleFavorite(pokemon, $event)">
+              </ion-icon>
               <div class="extra-info" *ngIf="hoveredPokemon === pokemon.name">
                 <p><strong>Height:</strong> {{ pokemon.height }}</p>
                 <p><strong>Weight:</strong> {{ pokemon.weight }}</p>

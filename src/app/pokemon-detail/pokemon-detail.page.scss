@@ -26,3 +26,24 @@ ion-card {
     font-size: 18px;
   }
   
+  .header-toolbar {
+    position: fixed; /* Define a posição fixa */
+    top: 0; /* Alinha o cabeçalho no topo */
+    width: 100%; /* Define a largura total */
+    background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
+  }
+  
+  .header-button {
+    --border-radius: 20px; /* Raio das bordas do botão */
+    --background: linear-gradient(to right, #4caf50, #2e7d32); /* Gradiente de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-weight: bold; /* Peso da fonte */
+  }
+  
+  .header-button:hover {
+    --background: linear-gradient(to right, #2e7d32, #4caf50); /* Mudança de cor no hover */
+  }
+  
+  .main-content {
+    margin-top: 60px; /* Define a margem superior para evitar sobreposição com o cabeçalho */
+  }

@@ -1,6 +1,7 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>{{ pokemon?.name | titlecase }}</ion-title>
+  <ion-toolbar class="header-toolbar">
+    <ion-title>Detalhes do Pokémon</ion-title>
+    <ion-button slot="end" (click)="goToHome()" class="header-button">Voltar à página inicial</ion-button>
   </ion-toolbar>
 </ion-header>
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PokemonService } from '../services/pokemon.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon-detail',
@@ -12,7 +13,9 @@ export class PokemonDetailPage implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private pokemonService: PokemonService
+    private pokemonService: PokemonService,
+    private router: Router
+
   ) {}
 
   ngOnInit() {
@@ -24,5 +27,8 @@ export class PokemonDetailPage implements OnInit {
     } else {
       console.error('O nome do Pokémon não foi encontrado.');
     }
+  }
+  goToHome() {
+    this.router.navigateByUrl('/');
   }
 }

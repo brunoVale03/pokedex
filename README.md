@@ -8,21 +8,31 @@ A Pokedex Ionic é uma aplicação web responsiva que permite aos usuários pesq
 
 ## Funcionalidades
 
-- **Lista de Pokémons**: Exibe uma lista de Pokémons com suas imagens e nomes por ordem de ID. Ao passar o mouse sobre o pokemon, ele exibe algumas informações de status sobre o mesmo.
+- **Lista de Pokémons**: Exibe uma lista de Pokémons com suas imagens e nomes por ordem de ID. 
 
-![Pagina inicial e detalhes](src/assets/images/Pagina%20inicial%20e%20detalhes.gif)
+![Pagina inicial](src/assets/images/Pagina%20inicial.gif)
+
+Ao passar o mouse sobre o pokemon, ele exibe algumas informações de status sobre o mesmo.
 
 - **Favoritar Pokémon**: É possível favoritar e desfavoritar seus Pokémons favoritos e o mesmo será posicionado no topo da lista.
 
-![Favoritar](src/assets/images/Favotitar.gif)
+![Pagina inicial + detalhes + Favoritar](src/assets/images/Página%20inicial%20+%20detalhes%20+%20Favoritar.gif)
 
 - **Detalhes do Pokémon**: Ao clicar em um Pokémon na lista, exibe detalhes adicionais, como altura, peso, experiência base e seu tipo. Permite também voltar a página inicial por meio de um botão configurado no canto superior da página.
 
-![Pagina de detalhes + botão voltar.gif](src/assets/images/Página%20de%20detalhes%20+%20botão%20voltar.gif)
+![Pagina detalhes](src/assets/images/Página%20detalhes.gif)
+
+A página também conta com um botão de retorno para retornar a página inicial.
+
+![Pagina detalhes + Botão voltar](src/assets/images/Pagina%20detalhes%20+%20Botão%20voltar.gif)
 
 - **Rodapé Fixo**: Um rodapé fixo em todas as páginas com o símbolo de "original" e a mensagem "Desenvolvido por Bruno Cezario do Vale".
 
 ![Assinatura Rodapé](src/assets/images/Assinatura%20rodapé.PNG)
+
+- **Mobile**: Design adaptado também para o uso da aplicação em dispositívo móvel.
+
+![Funcionalidade Mobile](src/assets/images/Funcionalidade%20mobile.gif)
 
 ## Configuração do Ambiente
 

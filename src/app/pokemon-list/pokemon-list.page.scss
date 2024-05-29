@@ -1,3 +1,30 @@
+:host {
+  display: block;
+}
+
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+ion-grid {
+  max-width: 100%;
+  justify-content: center;
+}
+
+ion-row {
+  justify-content: center;
+}
+
+ion-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 .favorite-icon {
   position: absolute;
   top: 10px;
@@ -10,44 +37,36 @@
 .pokemon-card {
   width: 250px; /* Largura fixa do card */
   transition: transform 0.2s ease; /* Transição suave para o zoom */
-  position: relative; /* Necessário para posicionar o ícone de favorito */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative; /* Para posicionar a estrela de favorito corretamente */
 }
 
 .pokemon-card:hover {
-  transform: scale(1.1); /* Aumenta o tamanho do card ao passar o mouse sobre ele */
+  transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse sobre ele */
 }
 
 .pokemon-info {
   display: flex; /* Utiliza flexbox para alinhar a imagem e as descrições */
+  flex-direction: column; /* Altera direção do flex para coluna em telas menores */
   align-items: center; /* Centraliza verticalmente os elementos */
+  position: relative;
 }
 
 .pokemon-image {
   width: 100px; /* Largura da imagem */
   height: 100px; /* Altura da imagem */
-  transition: width 0.3s ease, height 0.3s ease, margin-right 0.3s ease;
+  margin-bottom: 10px; /* Espaçamento inferior da imagem */
 }
 
 .extra-info {
   display: none; /* Inicialmente, as informações extras não são exibidas */
+  text-align: center; /* Centraliza o texto das informações extras */
 }
 
 .pokemon-card:hover .extra-info {
   display: block; /* Exibe as informações extras ao passar o mouse sobre o card */
 }
 
-.pokemon-card:hover .pokemon-image {
-  width: 50px; /* Diminui a largura da imagem ao passar o mouse sobre o card */
-  height: 50px; /* Diminui a altura da imagem ao passar o mouse sobre o card */
-  margin-right: 10px; /* Adiciona espaço à direita da imagem */
-}
-
 ion-card-title {
   font-size: 16px; /* Tamanho da fonte do título do card */
-  text-align: center;
-  width: 100%;
+  text-align: center; /* Centraliza o título */
 }

@@ -8,7 +8,7 @@ A Pokedex Ionic é uma aplicação web responsiva que permite aos usuários pesq
 
 ## Funcionalidades
 
-- **Lista de Pokémons**: Exibe uma lista de Pokémons com suas imagens e nomes por ordem de ID.
+- **Lista de Pokémons**: Exibe uma lista de Pokémons com suas imagens e nomes por ordem de ID. Ao passar o mouse sobre o pokemon, ele exibe algumas informações de status sobre o mesmo.
 
 ![Pagina inicial e detalhes](src/assets/images/Pagina%20inicial%20e%20detalhes.gif)
 
@@ -16,7 +16,7 @@ A Pokedex Ionic é uma aplicação web responsiva que permite aos usuários pesq
 
 ![Favoritar](src/assets/images/Favotitar.gif)
 
-- **Detalhes do Pokémon**: Ao clicar em um Pokémon na lista, exibe detalhes adicionais, como altura, peso e experiência base. Permite também voltar a página inicial por meio de um botão configurado no canto superior da página.
+- **Detalhes do Pokémon**: Ao clicar em um Pokémon na lista, exibe detalhes adicionais, como altura, peso, experiência base e seu tipo. Permite também voltar a página inicial por meio de um botão configurado no canto superior da página.
 
 ![Pagina de detalhes + botão voltar.gif](src/assets/images/Página%20de%20detalhes%20+%20botão%20voltar.gif)
 

@@ -8,10 +8,21 @@ A Pokedex Ionic é uma aplicação web responsiva que permite aos usuários pesq
 
 ## Funcionalidades
 
-- **Lista de Pokémons**: Exibe uma lista de Pokémons com suas imagens e nomes.
-- **Detalhes do Pokémon**: Ao clicar em um Pokémon na lista, exibe detalhes adicionais, como altura, peso e experiência base.
-- **Pesquisa**: Permite pesquisar Pokémons pelo nome.
+- **Lista de Pokémons**: Exibe uma lista de Pokémons com suas imagens e nomes por ordem de ID.
+
+![Pagina inicial e detalhes](src/assets/images/Pagina%20inicial%20e%20detalhes.gif)
+
+- **Favoritar Pokémon**: É possível favoritar e desfavoritar seus Pokémons favoritos e o mesmo será posicionado no topo da lista.
+
+![Favoritar](src/assets/images/Favotitar.gif)
+
+- **Detalhes do Pokémon**: Ao clicar em um Pokémon na lista, exibe detalhes adicionais, como altura, peso e experiência base. Permite também voltar a página inicial por meio de um botão configurado no canto superior da página.
+
+![Pagina de detalhes + botão voltar.gif](src/assets/images/Página%20de%20detalhes%20+%20botão%20voltar.gif)
+
 - **Rodapé Fixo**: Um rodapé fixo em todas as páginas com o símbolo de "original" e a mensagem "Desenvolvido por Bruno Cezario do Vale".
+
+![Assinatura Rodapé](src/assets/images/Assinatura%20rodapé.PNG)
 
 ## Configuração do Ambiente
 
@@ -43,17 +54,24 @@ ionic serve
 ```
   src/
     app/
-      components/
-      pages/
-        pokemon-list/
-        pokemon-detail/
+      home/
+      models/
+      pokemon-list/
+      pokemon-detail/
       services/
       app.component.html
       app.component.scss
       app.module.ts
+      app.component.ts
+      app-routing.module.ts
+      app.component.spec.ts
     assets/
       icon/
         original-icon.png
+        pokebola.png
+      shapes.svg
+    environments/
+    theme/
     global.scss
     index.html
 ```
